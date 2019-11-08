@@ -107,8 +107,8 @@ TPoint<double> recursive_center(const T& t) {
     if constexpr (ID < std::tuple_size_v<T>){
         return single_center<ID>(t) + recursive_center<ID+1>(t);
     }else{
-        TPoint<double> p;
-        p.p1(0,0);
+        TPoint<double> p(0, 0);
+        
         return p;
     }
 }

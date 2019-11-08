@@ -8,6 +8,7 @@
 
 int main()
 {
+
 	std::string cmd;
 	std::cout << "enter:\nrectangle - to add rectangle and calculate square and center of rectangle;\n" 
 			  << "rhombus - to add rhombus and calculate square and center of rhombus;\n"
@@ -78,4 +79,5 @@ int main()
 
 
 	}
+	
 }

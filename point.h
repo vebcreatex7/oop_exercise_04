@@ -8,6 +8,8 @@
 
 template<class T>
 struct TPoint {
+	TPoint() {}
+	TPoint(T a, T b) : x(a), y(b){}
 	T x;
 	T y;
 	TPoint<T> p1(T x, T y);
@@ -39,7 +41,7 @@ std::istream& operator >> (std::istream& is, TPoint<T>& p)
 }
 
 template <class T>
-TPoint<T> operator /= (TPoint<T>& p, int val)
+TPoint<T> operator /= ( TPoint<T>& p, int val)
 {
 	p.x = p.x / val;
 	p.y = p.y / val;
@@ -47,7 +49,7 @@ TPoint<T> operator /= (TPoint<T>& p, int val)
 }
 
 template <class T>
-TPoint<T> operator + (TPoint<T>& p1, TPoint<T>& p2)
+TPoint<T> operator + (const TPoint<T>& p1, const TPoint<T>& p2)
 {
 	TPoint<T> p;
 	p.x = p1.x + p2.x;
@@ -56,7 +58,7 @@ TPoint<T> operator + (TPoint<T>& p1, TPoint<T>& p2)
 }
 
 template <class T>
-TPoint<T> operator - (TPoint<T> p1, TPoint<T> p2)
+TPoint<T> operator - (const TPoint<T> p1, const TPoint<T> p2)
 {
 	TPoint<T> p;
 	p.x = p1.x - p2.x;
