@@ -1,0 +1,50 @@
+courage@courage-X550LC:~/oop/oop_exercise_04/cmake-build-debug$ ./oop_exercise_04 
+enter:
+rectangle - to add rectangle and calculate square and center of rectangle;
+rhombus - to add rhombus and calculate square and center of rhombus;
+trapezoid - to add trapezoid and calculate square and center of trapezoid;
+help - to show this manual;
+exit - to finish execution of program.
+rectangle
+0 0 0 3 4 3 4 0
+
+real_rectangle
+coordinates: 0 0  0 3  4 3  4 0 
+square: 12
+center: 2 1.5 
+tuple_rectangle
+coordinates: 0 0 0 3 4 3 4 0 
+square: 12
+center: 2 1.5 
+rhombus 
+3 0 0 6 3 12 6 6
+
+real_rhombus
+coordinates: 3 0  0 6  3 12  6 6 
+square: 36
+center: 3 6 
+tuple_rhombus
+coordinates: 3 0 0 6 3 12 6 6 
+square: 36
+center: 3 6 
+help
+
+enter:
+rectangle - to add rectangle and calculate square and center of rectangle;
+rhombus - to add rhombus and calculate square and center of rhombus;
+trapezoid - to add trapezoid and calculate square and center of trapezoid;
+help - to show this manual;
+exit - to finish execution of program.
+trapezoid
+0 0 2 3 5 3 6 0
+
+real_trapezoid
+coordinates: 0 0  2 3  5 3  6 0 
+square: 13.5
+center: 3.25 1.5 
+tuple_trapezoid
+coordinates: 0 0 2 3 5 3 6 0 
+square: 13.5
+center: 3.25 1.5 
+exit
+courage@courage-X550LC:~/oop/oop_exercise_04/cmake-build-debug$

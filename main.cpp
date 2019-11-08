@@ -20,50 +20,50 @@ int main()
 		if (cmd == "rectangle") {
 			TRectangle<double> real_rectangle(std::cin);
 			std::tuple<TPoint<double>, TPoint<double>, TPoint<double>, TPoint<double>>
-			fake_rectangle{{0, 0}, {0, 1}, {1, 1}, {1, 0}};
+			tuple_rectangle{real_rectangle.a, real_rectangle.b, real_rectangle.c, real_rectangle.d};
 			std::cout << "\nreal_rectangle\n";
 			std::cout << "coordinates: ";
 			print(real_rectangle);
 			std::cout << "\nsquare: " << Square(real_rectangle);
 			std::cout << "\ncenter: " << center(real_rectangle);
-			std::cout << "\nfake_rectangle\n";
+			std::cout << "\ntuple_rectangle\n";
 			std::cout << "coordinates: ";
-			print(fake_rectangle);
-			std::cout << "\nsquare: " << Square(fake_rectangle);
-			std::cout << "\ncenter: " << center(fake_rectangle) << "\n";
+			print(tuple_rectangle);
+			std::cout << "\nsquare: " << Square(tuple_rectangle);
+			std::cout << "\ncenter: " << center(tuple_rectangle) << "\n";
 
 
 		} else if (cmd == "rhombus") {
 			TRhombus<double> real_rhombus(std::cin);
 			std::tuple<TPoint<double>, TPoint<double>, TPoint<double>, TPoint<double>>
-			fake_rhombus{{1, 0}, {0, 1}, {1, 2}, {2, 1}};
+			tuple_rhombus{real_rhombus.a, real_rhombus.b, real_rhombus.c, real_rhombus.d};
 			std::cout << "\nreal_rhombus\n";
 			std::cout << "coordinates: ";
 			print(real_rhombus);
 			std::cout << "\nsquare: " << Square(real_rhombus);
 			std::cout << "\ncenter: " << center(real_rhombus);
-			std::cout << "\nfake_rhombus\n";
+			std::cout << "\ntuple_rhombus\n";
 			std::cout << "coordinates: ";
-			print(fake_rhombus);
-			std::cout << "\nsquare: " << Square(fake_rhombus);
-			std::cout << "\ncenter: " << center(fake_rhombus) << "\n";
+			print(tuple_rhombus);
+			std::cout << "\nsquare: " << Square(tuple_rhombus);
+			std::cout << "\ncenter: " << center(tuple_rhombus) << "\n";
 
 
 			
 		} else if (cmd == "trapezoid") {
 			TTrapezoid<double> real_trapezoid(std::cin);
 			std::tuple<TPoint<double>, TPoint<double>, TPoint<double>, TPoint<double>>
-			fake_trapezoid{{0, 0}, {1, 1}, {2, 1}, {3, 0}};
+			tuple_trapezoid{real_trapezoid.a, real_trapezoid.b, real_trapezoid.c, real_trapezoid.d};
 			std::cout << "\nreal_trapezoid\n";
 			std::cout << "coordinates: ";
 			print(real_trapezoid);
 			std::cout << "\nsquare: " << Square(real_trapezoid);
 			std::cout << "\ncenter: " << center(real_trapezoid);
-			std::cout << "\nfake_trapezoid\n";
+			std::cout << "\ntuple_trapezoid\n";
 			std::cout << "coordinates: ";
-			print(fake_trapezoid);
-			std::cout << "\nsquare: " << Square(fake_trapezoid);
-			std::cout << "\ncenter: " << center(fake_trapezoid) << "\n";
+			print(tuple_trapezoid);
+			std::cout << "\nsquare: " << Square(tuple_trapezoid);
+			std::cout << "\ncenter: " << center(tuple_trapezoid) << "\n";
 		} else if (cmd == "help") {
 			std::cout << "\nenter:\nrectangle - to add rectangle and calculate square and center of rectangle;\n" 
 			  << "rhombus - to add rhombus and calculate square and center of rhombus;\n"
