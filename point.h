@@ -12,19 +12,12 @@ struct TPoint {
 	TPoint(T a, T b) : x(a), y(b){}
 	T x;
 	T y;
-	TPoint<T> p1(T x, T y);
+	
 
 };
 
 
 
-template<class T>
-TPoint<T> TPoint<T>::p1(T x, T y) {
-	TPoint<T> p;
-	p.x = x;
-	p.y = x;
-	return p;
-}
 
 template<class T>
 std::ostream& operator << (std::ostream& os, const TPoint<T>& p)
